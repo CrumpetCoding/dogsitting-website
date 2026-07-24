@@ -14,3 +14,7 @@ body,
 body {
   margin: 0;
 }
+
+#navbar {
+  background-color: rgb(25, 156, 179);
+}
