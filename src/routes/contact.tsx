@@ -6,6 +6,6 @@ export const Route = createFileRoute('/contact')({
 
 function RouteComponent() {
   return <div className="p-2">
-    <h3>Welcome to Contact!</h3>
+    <h1 id='headings'>Welcome to Contact!</h1>
   </div>
 }

@@ -14,3 +14,9 @@ body,
 body {
   margin: 0;
 }
+
+#headings {
+  display: flex;
+  font-size: 200%;
+  justify-content: center;
+}
