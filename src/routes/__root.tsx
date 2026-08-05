@@ -15,9 +15,9 @@ const RootLayout = () => (
             </Link>{' '}
           </Button>
           <Button variant='text'>
-            <Link to="/about" className="[&.active]:font-bold">
+            <Link to="/services" className="[&.active]:font-bold">
               <Typography variant='h6' component="div" sx={{ flexGrow: 1, color: 'white', '&:hover': { color: '#283044' } }}>
-                About
+                Services
               </Typography>
             </Link>{' '}
           </Button>
