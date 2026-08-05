@@ -18,6 +18,7 @@ export default function TextSection({
                 py: { xs: 4, sm: 6, md: 8 },
                 px: { xs: 8, sm: 12, md: 16 },
                 textAlign: 'center',
+                borderRadius: theme => theme.shape.borderRadius,
             }}
         >
             <Typography

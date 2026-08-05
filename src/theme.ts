@@ -10,6 +10,7 @@ export const theme = createTheme({
             main: '#f50057',
         },
         custom: {
+            borderRadius: "8px",
             cream: {
                 backgroundColor: "#fdedcf",
                 textColor: "#286070",
@@ -21,6 +22,7 @@ export const theme = createTheme({
 declare module '@mui/material/styles' {
     interface Palette {
         custom: {
+            borderRadius: string;
             cream: {
                 backgroundColor: string;
                 textColor: string;
@@ -29,6 +31,7 @@ declare module '@mui/material/styles' {
     }
     interface PaletteOptions {
         custom: {
+            borderRadius: string;
             cream: {
                 backgroundColor: string;
                 textColor: string;
