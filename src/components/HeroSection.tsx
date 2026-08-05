@@ -31,7 +31,7 @@ export default function HeroSection() {
                         mb: 4,
                         fontWeight: 'normal',
                         maxWidth: '600px',
-                        mx: 'auto', // Centers the paragraph horizontally
+                        mx: 'auto',
                         fontSize: { xs: '1.1rem', sm: '1.25rem' },
                     }}
                 >
