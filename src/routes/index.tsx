@@ -3,6 +3,7 @@ import HeroSection from '#/components/HeroSection'
 import TextSection from '#/components/TextSection'
 import { Container } from '@mui/material'
 
+
 export const Route = createFileRoute('/')({
   component: Index,
 })
