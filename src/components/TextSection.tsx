@@ -26,6 +26,7 @@ export default function TextSection({
                 variant="h3"
                 color="text.primary"
                 gutterBottom
+                sx={{ gridArea: '1' }}
             >
                 {heading}
             </Typography>
@@ -38,10 +39,12 @@ export default function TextSection({
                     fontWeight: 'normal',
                     mx: 'auto',
                     fontSize: { xs: '1.1rem', sm: '1.25rem' },
+                    gridArea: '2',
                 }}
             >
                 {body}
             </Typography>
+            <img src='src\images\dog.jpg' width='200' height='200' />
         </Box>
     );
 }
