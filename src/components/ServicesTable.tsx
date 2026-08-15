@@ -8,11 +8,13 @@ import { TableContainer, TableHead, Table, TableBody, TableRow, TableCell, Paper
 
 export default function ServicesTable() {
     return (
-        <TableContainer component={Paper}>
+        <TableContainer component={Paper} sx={{
+            maxWidth: 800,
+            margin: 'auto',
+        }}>
             <Table aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell sx={{ fontWeight: 'bold' }}>Id</TableCell>
                         <TableCell sx={{ fontWeight: 'bold' }}>Product Name</TableCell>
                         <TableCell sx={{ fontWeight: 'bold' }}>Price</TableCell>
                     </TableRow>
@@ -21,9 +23,7 @@ export default function ServicesTable() {
                     {tableData.map((row) => (
                         <TableRow
                             key={row.id}
-                            sx={{ '&:last-child td, &last-child th': { border: 0 } }}
                         >
-                            <TableCell>{row.id}</TableCell>
                             <TableCell>{row.product_name}</TableCell>
                             <TableCell>{row.price}</TableCell>
                         </TableRow>
