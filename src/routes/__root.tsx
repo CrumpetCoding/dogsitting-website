@@ -1,9 +1,10 @@
-import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
+import { createRootRoute, Link, Outlet, HeadContent } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 import { AppBar, Toolbar, Typography, Button } from '@mui/material'
 
 const RootLayout = () => (
   <>
+    <HeadContent />
     <div id="menu">
       <AppBar position='static'>
         <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>

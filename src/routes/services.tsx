@@ -3,6 +3,9 @@ import ServicesTable from '#/components/ServicesTable'
 
 export const Route = createFileRoute('/services')({
     component: About,
+    head: () => ({
+        meta: [{ title: 'Services' }],
+    })
 })
 
 function About() {
