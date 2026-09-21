@@ -10,7 +10,7 @@ export const Route = createFileRoute('/contact')({
 
 function RouteComponent() {
   return <div className="p-2">
-    <h1 id='headings'>Welcome to Contact!</h1>
+    <h1 id='headings'>Contact Us</h1>
     <ContactForm />
   </div>
 }
