@@ -1,10 +1,9 @@
-import { TextField, Button, Checkbox, Container, Paper } from "@mui/material";
+import { TextField, Button, Container, Paper } from "@mui/material";
 
 export default function ContactForm() {
     return (
         <Container
             maxWidth='xs'
-            maxHeight='xl'
         >
             <Paper
                 elevation={10}

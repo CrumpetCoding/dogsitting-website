@@ -1,4 +1,4 @@
-import { TableContainer, TableHead, Table, TableBody, TableRow, TableCell, Paper } from "@mui/material";
+import { Container, TableHead, Table, TableBody, TableRow, TableCell, Paper } from "@mui/material";
 
 
 
@@ -8,29 +8,34 @@ import { TableContainer, TableHead, Table, TableBody, TableRow, TableCell, Paper
 
 export default function ServicesTable() {
     return (
-        <TableContainer component={Paper} sx={{
-            maxWidth: 800,
-            margin: 'auto',
-        }}>
-            <Table aria-label="simple table">
-                <TableHead>
-                    <TableRow>
-                        <TableCell sx={{ fontWeight: 'bold' }}>Product Name</TableCell>
-                        <TableCell sx={{ fontWeight: 'bold' }}>Price</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {tableData.map((row) => (
-                        <TableRow
-                            key={row.id}
-                        >
-                            <TableCell>{row.product_name}</TableCell>
-                            <TableCell>{row.price}</TableCell>
+        <Container maxWidth='md'>
+            <Paper
+                elevation={10}
+                sx={{
+                    marginTop: 3,
+                    padding: 2,
+                }}
+            >
+                <Table aria-label="simple table">
+                    <TableHead>
+                        <TableRow>
+                            <TableCell sx={{ fontWeight: 'bold' }}>Product Name</TableCell>
+                            <TableCell sx={{ fontWeight: 'bold' }}>Price</TableCell>
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+                    </TableHead>
+                    <TableBody>
+                        {tableData.map((row) => (
+                            <TableRow
+                                key={row.id}
+                            >
+                                <TableCell>{row.product_name}</TableCell>
+                                <TableCell>{row.price}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </Paper>
+        </Container>
     )
 }
 
