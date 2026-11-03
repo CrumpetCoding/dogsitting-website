@@ -6,7 +6,7 @@ const RootLayout = () => (
   <>
     <HeadContent />
     <div id="menu">
-      <AppBar position='static'>
+      <AppBar position='fixed'>
         <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
           <Button variant='text'>
             <Link to="/" className="[&.active]:font-bold">
